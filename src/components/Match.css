@@ -1,0 +1,51 @@
+.Match_background {
+    background-color: #FF6B82;;
+}
+
+.Match_container {
+    
+    max-width: 1400px;
+    width: 70%;
+    margin: 0px auto;
+  }
+  
+.Match_candidat_container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% 0;
+  }
+  
+  .Match_img_candidat {
+    
+    height: 300px;
+    width: 250px;
+  }
+  
+  .button_match {
+      margin-right: 30px;
+      margin-left: 30px;
+      width: 150px;
+      border-radius: 50px;
+      background-color: #36C8D1; ;
+      
+  }
+
+  .Match_coeurs_container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10% 0;
+    
+  }
+
+  .Match_img_coeurs {
+    
+    height: 180px;
+    width: 180px;
+  }
+
+  
+  
