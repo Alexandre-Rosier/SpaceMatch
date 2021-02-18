@@ -16,7 +16,7 @@ export default function NoMatch() {
   const [messageCombat, setMessageCombat] = useState('invisible')
   const [messageNewChance, setMessageNewChance] = useState("invisible")
   const [red, setRed] = useState('red')
-  const [SuperFight, setSuperFight] = useState('Combat en cour ...')
+  const [SuperFight, setSuperFight] = useState('Combat en cours ...')
 
   //Choose play weapon
 
@@ -74,8 +74,6 @@ export default function NoMatch() {
           alt="name"
         />
         </div>
-       
-        {/*bloc candidat 1*/}
         <button className={`btnStartFight ${BtnStart}`} onClick={startGame}>
           {launch}
         </button>
@@ -90,9 +88,9 @@ export default function NoMatch() {
             />
         </div>
         
-        {/*bloc candidat 2*/}
       </div>
-      <button className={`BtnNewChance ${messageNewChance}`}>Peut être une dernière chance de passer une bonne soirée</button>
+      <button className={`BtnNewChance ${messageNewChance}`}>Peut être une solution pour pécho la prochaine fois</button>
+      {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/hP08aSMWqD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
     </div>
   );
 }
