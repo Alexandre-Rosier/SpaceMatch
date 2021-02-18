@@ -1,19 +1,25 @@
-.noMatch_container {
+/* .noMatch_container {
   max-width: 1400px;
-  /* height: 100vh; */
   width: 70%;
-  border: solid 1px red;
   margin: 0px auto;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; */
 }
-
+.noMAtch_user_weapon,
+.noMAtch_ai_weapon {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.noMAtch_ai_weapon {
+  border: 1px solid green;
+}
 .noMatch_armes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 10% 0;
+  border: 1px solid green;
 }
 .img-weapon {
   width: 75px;
@@ -37,11 +43,6 @@
   width: 250px;
 }
 
-.noMatch_title_vs {
-  /* margin: 0 10% 0 10%; */
-  /* border: 1px solid red; */
-}
-
 .invisible {
   display: none;
-}
+} */
