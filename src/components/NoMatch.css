@@ -15,12 +15,10 @@
   justify-content: space-around;
   margin: 10% 0;
 }
-
-.noMatch_img_arme {
-  height: 200px;
-  width: 150px;
+.img-weapon {
+  width: 75px;
+  object-fit: contain;
 }
-
 .noMatch_candidat_container {
   display: flex;
   justify-content: space-evenly;
@@ -42,4 +40,8 @@
 .noMatch_title_vs {
   /* margin: 0 10% 0 10%; */
   /* border: 1px solid red; */
+}
+
+.invisible {
+  display: none;
 }
