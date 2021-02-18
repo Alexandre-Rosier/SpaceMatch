@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.PhotoCard {
+    height: 80px;
+    width: 80px;
+    border: pink solid 3px;
+    border-radius: 5px;
+}
+
+.NamePers {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
