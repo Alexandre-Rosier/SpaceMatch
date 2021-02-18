@@ -1,27 +1,4 @@
-#buttonMatch {
-    margin-top: 250px;
-    padding: 5px;
-    background-color: blueviolet;
-    border-radius: 10px;
-    color: pink;
-    font-size: 40px ;
-    width: 250px;
-}
 
-
-#buttonMatch:hover {
-    margin-top: 250px;
-    padding: 5px;
-    background-color: pink;
-    border-radius: 10px;
-    color: blueviolet;
-    font-size: 40px ;
-    width: 250px;
-}
-
-#hart {
-    font-size: 50px;
-}
 
 #buttonNoMatch {
     margin-top: 250px;

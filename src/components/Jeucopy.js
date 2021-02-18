@@ -4,6 +4,8 @@ import axios from 'axios'
 import Card from './Card'
 
 import './Jeucopy.css'
+import './BoutonMatch.css'
+
 
 export default class Jeucopy extends Component {
     state = {
@@ -12,26 +14,17 @@ export default class Jeucopy extends Component {
 
     componentDidMount() {
         axios
-                .get('https://miadil.github.io/starwars-api/api/all.json')
+                // .get('https://miadil.github.io/starwars-api/api/all.json')
+                .get('https://simpsons-quotes-api.herokuapp.com/quotes')
                 .then((res) => this.setState({StarsData : res.data}))
     }
 
     render() {
         const {StarsData}  = this.state
+        // const RandomStars = StarsData.map[Math.floor(Math.random() * StarsData.map.lenght)]
 
-    //     const gameFood = test.filter((data) =>
-    //     data["Catégorie Jeux"].includes(this.props.name)
-    //     );
-    //     const remainingGameFood = gameFood.slice(0);
-    //     const randomTen = [];
-    //     while (randomTen.length < 10)
-    //     randomTen.push(
-    //     remainingGameFood.splice(
-    //     Math.floor(Math.random() * remainingGameFood.length),
-    //     1
-    //     )[0]
-    //   );
-
+        // document.body.innerHTML = RandomStars
+        
         return (
             <div className="Jeu">
                 <h1 className="TitreJeu">La roue de l'amour 💘 ?</h1>
@@ -44,10 +37,15 @@ export default class Jeucopy extends Component {
                     </div> 
                     <p id="icon18">🔞</p>  
                     <div className="Card">
-                    <img className="ImageJeu" src="https://vignette.wikia.nocookie.net/starwars/images/c/c1/Tarkininfobox.jpg" alt= "Alien" />
-                    <div id="ligneJeu">Name Player</div>  
-                    </div>   
+                       {StarsData.map((item) => (
+                            <Card {...item} key={item.id}/>
+                        ))}  
+                    </div>       
                 </div> 
+                <button id="buttonMatch">
+                    Etes vous faits l'un pour l'autre ? 
+                     <span id="hart">🌈💖🔥</span>
+                </button>
             </div>
         )
     }
