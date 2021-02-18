@@ -3,43 +3,46 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 
 import Card from './Card'
-
 import './Jeucopy.css'
 import './BoutonMatch.css'
 
 export default function Jeucopy () {
-    const [StarsData, setStarsData] = useState ([""]);
-    const [ImgRandom, setImgRandom] = useState (['']);
+    const [StarsData, setStarsData] = useState ([""])
+    const [ImgRandom, setImgRandom] = useState ('')
+    const[StarName, setStarName] = useState('')
+    const [ImgRandomSd, setImgRandomSd] = useState ('')
+    const[StarNameSd, setStarNameSd] = useState('')
 
     useEffect(() => {
 
-    async function fetchData(){
+     async function fetchData(){
         const req = await axios.get("https://miadil.github.io/starwars-api/api/all.json")
-        setStarsData(req.data)
-        StarsData.map(star => (
-            setImgRandom(star.image)
-        ))
+
+        const reqFutur =await axios.get('futuramaapi.herokuapp.com/api/v2/characters')
+        console.log(reqFutur)
+        const random = Math.floor(Math.random() * 87)
+        const random2 = Math.floor(Math.random() * 87)
+        setStarName(req.data[random].name)
+        setImgRandom(req.data[random].image)
+        setStarNameSd(req.data[random2].name)
+        setImgRandomSd(req.data[random2].image)
     }
     fetchData()
    
     },[])
 
-     const random =Math.floor(Math.random() * StarsData.length)
-    setImgRandom(StarsData[random].image)
-    // console.log(ImgRandom)
+    
         return (
             <div className="Jeu">
                 <h1 className="TitreJeu">La roue de l'amour 💘 ?</h1>
 
                 <div id="tableauJeu">
                     <div className="Card">
-                     
+                        <Card image={ImgRandom}/>
                     </div> 
                     <p id="icon18">🔞</p>  
                     <div className="Card">
-                        {/* {StarsData.map(starData => (
-                            <img src={starData.image} alt="image"></img>
-                        ))} */}
+                        <Card image={ImgRandomSd}/>
                     </div>       
                 </div> 
                 {/* pb pour lier action au boutton */}
