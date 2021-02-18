@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+.Jeu {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    border: 15px solid rgb(199, 78, 189);
+    border-radius: 10px;
+    height: 500px;
+    width: 500px;
+    padding: 0px;
+}
+.TitreJeu { 
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+#tableauJeu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.Card {
+    height: 200px;
+    width: auto;
+}
+
+.ImageJeu {
+    height: 200px;
+    width: auto;
+}
+
+#icon18 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 100px;
+}
+
+#ligneJeu {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
