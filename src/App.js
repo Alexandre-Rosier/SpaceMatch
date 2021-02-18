@@ -1,10 +1,10 @@
 import './App.css';
-import OlivierAlex from './screens/OlivierAlex'
+import Game from './screens/Game'
 
 function App() {
   return (
     <div className="App">
-      <OlivierAlex />
+      <Game />
     </div>
   );
 }
