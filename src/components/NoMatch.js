@@ -56,7 +56,8 @@ export default function NoMatch() {
     
 
   return (
-    <div className="noMatch_container">
+    <div className="BigContainer-nomatch"> 
+          <div className="noMatch_container">
       <div className="noMatch_candidat_container">
         <div className="noMAtch_user_weapon">
           <p> {UserMessage} </p>
@@ -91,6 +92,7 @@ export default function NoMatch() {
       </div>
       <button className={`BtnNewChance ${messageNewChance}`}>Peut être une solution pour pécho la prochaine fois</button>
       {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/hP08aSMWqD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+    </div>
     </div>
   );
 }

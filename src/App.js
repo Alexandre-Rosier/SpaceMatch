@@ -6,8 +6,9 @@ import Game from './screens/Game'
 function App() {
   return (
     <div className="App">
-      <NoMatch />
       <Game />
+      <NoMatch />
+      
     </div>
   );
 }

@@ -45,7 +45,8 @@ export default function Jeucopy () {
 
 
         return (
-            <div className="Jeu">
+          <div className="Container-Jeu">
+                <div className="Jeu">
                  <h1 className="TitreJeu">La roue de l'amour � </h1>
 
                 <div id="tableauJeu">
@@ -79,6 +80,7 @@ export default function Jeucopy () {
                 </Link> */}
 
             </div>
+          </div>
         )
 }
 

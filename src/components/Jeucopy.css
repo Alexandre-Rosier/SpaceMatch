@@ -6,6 +6,13 @@ button:focus{
 .invisible{
     display:none;
 }
+.Container-Jeu{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .Jeu {
     display: flex;
     flex-direction: column;
@@ -14,10 +21,6 @@ button:focus{
     border: 15px solid rgb(199, 78, 189);
     border-radius: 10px;
     padding:10px 12px;
-    position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .TitreJeu { 
