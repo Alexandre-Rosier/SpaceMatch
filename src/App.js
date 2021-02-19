@@ -9,14 +9,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-      <Route path="/" exact component={Accueil}/>
-      <Route path="/game" exact component={Game}/>
-      <Route path="/match" exact component={Match}/>
-      <Route path="/nomatch" exact component={NoMatch}/>
-        {/* <Accueil /> */}
-        {/* <Game />
-        <Match />
-        <NoMatch /> */}
+        <Route path="/" exact component={Accueil}/>
+        <Route path="/game" exact component={Game}/>
+        <Route path="/match" exact component={Match}/>
+        <Route path="/nomatch" exact component={NoMatch}/>
       </Router>
     </div>
   );

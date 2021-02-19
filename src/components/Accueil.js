@@ -10,7 +10,6 @@ function Accueil () {
 
     const submit = (e) => {
         e.preventDefault();
-            //alert ("c'est parti");
           }
 
         return (
@@ -19,15 +18,14 @@ function Accueil () {
                 <div className="accueil-background">
                     <div className="accueil-titre">
                         <img src="images/coeur1.jpeg" alt="coeur" className="coeur1" />
-                            <h1 className="titre-h1">TOURNEZ MENAGE</h1>
-                            <img src="images/flingue.jpg" alt="flingue" className="flingue" />
-            </div>
-
-            <div className="accueil-btn">
+                        <h1 className="titre-h1">TOURNEZ MENAGE</h1>
+                        <img src="images/flingue.jpg" alt="flingue" className="flingue" />
+                    </div>
+                    <div className="accueil-btn">
                     <form onSubmit={submit}>
-                    <Link to="/game">
-                        <input onClick = {handleClick} type="submit" value="GO" className="start" />
-                    </Link>
+                        <Link to="/game">
+                            <input onClick = {handleClick} type="submit" value="GO" className="start" />
+                        </Link>
                         <div className="message-start">
                             {start}
                         </div>

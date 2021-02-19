@@ -66,7 +66,6 @@ export default function Jeucopy () {
                     Etes vous faits l'un pour l'autre ? 
                      <span id="hart">🌈💖🔥</span>
                 </button>
-
                 <button className={`buttonNoMatch ${invisible}`}>
                     It's a FIGHT ! <span id="hart">🔪💣🍆</span>
                 </button>
