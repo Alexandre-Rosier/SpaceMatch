@@ -14,27 +14,24 @@ export default function Jeucopy () {
     const[StarNameSd, setStarNameSd] = useState('')
 
     useEffect(() => {
-
-     async function fetchData(){
+        async function fetchData(){
         const req = await axios.get("https://miadil.github.io/starwars-api/api/all.json")
-
-        const reqFutur =await axios.get('futuramaapi.herokuapp.com/api/v2/characters')
-        console.log(reqFutur)
+        const reqFuturama = await axios.get("http://futuramaapi.herokuapp.com/api/v2/characters")
+        console.log(reqFuturama.data)
         const random = Math.floor(Math.random() * 87)
-        const random2 = Math.floor(Math.random() * 87)
+        const random2 = Math.floor(Math.random() * 20)
         setStarName(req.data[random].name)
         setImgRandom(req.data[random].image)
-        setStarNameSd(req.data[random2].name)
-        setImgRandomSd(req.data[random2].image)
-    }
-    fetchData()
-   
+        setStarNameSd(reqFuturama.data[random2].Name)
+        setImgRandomSd(reqFuturama.data[random2].PicUrl)
+        }
+        fetchData()
     },[])
 
     
         return (
             <div className="Jeu">
-                <h1 className="TitreJeu">La roue de l'amour 💘 ?</h1>
+                 <h1 className="TitreJeu">La roue de l'amour �  ?</h1>
 
                 <div id="tableauJeu">
                     <div className="Card">
