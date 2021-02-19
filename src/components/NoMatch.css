@@ -1,48 +1,74 @@
-/* .noMatch_container {
-  max-width: 1400px;
-  width: 70%;
-  margin: 0px auto;
-}
-.noMAtch_user_weapon,
-.noMAtch_ai_weapon {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.noMAtch_ai_weapon {
-  border: 1px solid green;
-}
-.noMatch_armes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin: 10% 0;
-  border: 1px solid green;
-}
-.img-weapon {
-  width: 75px;
-  object-fit: contain;
-}
-.noMatch_candidat_container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10% 0;
-}
-
-@media screen and (max-width: 796px) {
-  .noMatch_candidat_container {
-    flex-direction: column;
-  }
-}
-
-.noMatch_img_candidat {
-  height: 300px;
-  width: 250px;
-}
-
 .invisible {
   display: none;
-} */
+} 
+.noMatch_container{
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.noMatch_candidat_container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-weapon{
+  width: 100px;
+  height: 100px;
+}
+.noMatch_img_candidat{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.noMAtch_user_weapon, .noMAtch_ai_weapon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002036;
+  margin: 20px 10px;
+  width: 310px;
+  height: 500px;
+  color: white;
+  padding: 0px 5px;
+}
+
+.btnStartFight{
+  padding: 8px 12px;
+  background-color: #00415C;
+  text-transform: uppercase;
+  color: #FF9A6E;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  border-color: transparent;
+  border-radius: 10px;
+}
+.spanCombatEnCour{
+  
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin: 0px 2vw;
+}
+.BtnNewChance{
+  padding: 8px 12px;
+  background-color: #00415C;
+  text-transform: uppercase;
+  color: #FF9A6E;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  border-color: transparent;
+  border-radius: 10px;
+}
