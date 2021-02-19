@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #FF9A6E;
 }
 .noMatch_container{
   display: flex;
@@ -60,7 +61,7 @@
   border-radius: 10px;
 }
 .spanCombatEnCour{
-  
+  color: White;
   font-size: 2rem;
   letter-spacing: 2px;
   font-weight: 800;
