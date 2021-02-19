@@ -14,23 +14,6 @@ export default function PresPage2() {
     const [visible1, setVisible1] = useState(true)
     const [visible2, setVisible2] = useState(true)
     const [visible3, setVisible3] = useState(true)
-    
-    const [time, setTime] = useState(10)
-    const [timerOn, setTimeOn] = useState(false)
-
-useEffect(()=> {
-    let interval = null;
-if(timerOn) {
-    interval = setInterval (() => {
-        setTime(prevTime => prevTime - 1) && {time} === 0
-    }, 1000) 
-}else {
-    clearInterval(interval)
-}
-return() => clearInterval(interval) 
-
-},[timerOn])
-
 
     useEffect(()=> {
         setTimeout(() => {
@@ -59,8 +42,6 @@ return() => clearInterval(interval)
                     <p className="text-p3">Pour le découvrir, simulons ces rencontres!</p>
                 </div>
             </Background>
-            <button onClick={() => setTimeOn(true)}>start</button>
-            <div>{time}</div>
         </div>
     )
 }
