@@ -21,6 +21,8 @@ export default function NoMatch(props) {
   const [SuperFight, setSuperFight] = useState('Combat en cours ...');
   const [prevImageUser, setPrevImageUser] = useState('');
   const [prevImageIa, setPrevImageIa] = useState('');
+  const [ScoreScUser, setScoreScUser] = useState('')
+  const [ScoreScAi, setScoreScAi] = useState('')
 
   //Choose play weapon
 
@@ -61,12 +63,14 @@ export default function NoMatch(props) {
     setMessageNewChance('');
     setTimeout(function () {
       if (scoreArmAi < UserArmsScore) {
-        setSuperFight(' La win Ingrid et Caro && Jacquie && Michel ');
+        setSuperFight(' La win Jacquie && Michel ');
       } else if (scoreArmAi === UserArmsScore) {
         setSuperFight(' Egalite ');
       } else {
         setSuperFight("T'as perdu ");
       }
+      setScoreScUser(`Your score : ${UserArmsScore}`)
+      setScoreScAi(`Computer score : ${scoreArmAi}`)
     }, 3000);
   };
 
@@ -95,6 +99,7 @@ export default function NoMatch(props) {
                 alt={armsImg}
               ></img>
             </div>
+            <p>{ScoreScUser}</p>
             <img
               className="noMatch_img_candidat"
               src={prevImageUser}
@@ -117,6 +122,7 @@ export default function NoMatch(props) {
               alt="img"
               src={armsImgAi}
             ></img>
+            <p>{ScoreScAi}</p>
             <img
               className="noMatch_img_candidat"
               src={prevImageIa}
