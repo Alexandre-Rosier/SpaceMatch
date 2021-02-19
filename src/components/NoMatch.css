@@ -1,6 +1,14 @@
 .invisible {
   display: none;
 } 
+
+.BigContainer-nomatch{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .noMatch_container{
   display: flex;
   width: 100%;
@@ -8,10 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
 }
 .noMatch_candidat_container{
   display: flex;

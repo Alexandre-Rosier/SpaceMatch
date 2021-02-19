@@ -5,6 +5,7 @@ import ButtonMatch from './BoutonMatch'
 import Card from './Card'
 import './Jeucopy.css'
 import './BoutonMatch.css'
+import PresPage2 from './PresentationPage2'
 
 export default function Jeucopy () {
     const [StarsData, setStarsData] = useState ([""])
@@ -45,7 +46,9 @@ export default function Jeucopy () {
 
 
         return (
-            <div className="Jeu">
+          <div className="Container-Jeu">
+                <PresPage2/>
+                <div className="Jeu">
                  <h1 className="TitreJeu">La roue de l'amour � </h1>
 
                 <div id="tableauJeu">
@@ -79,6 +82,7 @@ export default function Jeucopy () {
                 </Link> */}
 
             </div>
+          </div>
         )
 }
 
