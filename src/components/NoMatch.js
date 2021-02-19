@@ -92,6 +92,13 @@ export default function NoMatch() {
 
   return (
     <div className="noMatch_container">
+      <div className="noMatch_armes">
+        <div className="noMAtch_ai_weapon">
+          <p>L'arme de votre adversaire</p>
+          <br></br>
+          <img className="img-weapon" src={armsImgAi}></img>
+        </div>
+      </div>
       <div className="noMatch_candidat_container">
         <div className="noMAtch_user_weapon">
           <p>Choisissez votre arme brise coeur</p>
