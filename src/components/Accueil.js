@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './Accueil.css';
+import {Link} from "react-router-dom";
 
 function Accueil () {
     const [start, setStart]= useState("")
@@ -24,7 +25,9 @@ function Accueil () {
 
             <div className="accueil-btn">
                     <form onSubmit={submit}>
+                    <Link to="/game">
                         <input onClick = {handleClick} type="submit" value="GO" className="start" />
+                    </Link>
                         <div className="message-start">
                             {start}
                         </div>
