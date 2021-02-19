@@ -1,5 +1,10 @@
 .BodyJeu {
     display: flex;
-    justify-content: center;
-    width: auto;
+    width: 90%;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    background: #e743b6;
+    box-shadow: 0 0px 80px 60px #e439b0;
 }

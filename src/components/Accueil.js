@@ -3,7 +3,7 @@ import './Accueil.css';
 import {Link} from "react-router-dom";
 
 function Accueil () {
-    const [start, setStart]= useState("")
+    const [start, setStart]= useState("Go")
     const handleClick = () => {
         setStart("c'est parti")
     }
@@ -17,9 +17,9 @@ function Accueil () {
                 <audio src="musique/les-inconnus-ingrid-est-ce-que-tu-baises.mp3" controls></audio>
                 <div className="accueil-background">
                     <div className="accueil-titre">
-                        <img src="images/coeur1.jpeg" alt="coeur" className="coeur1" />
+                      
                         <h1 className="titre-h1">TOURNEZ MENAGE</h1>
-                        <img src="images/flingue.jpg" alt="flingue" className="flingue" />
+                  
                     </div>
                     <div className="accueil-btn">
                     <form onSubmit={submit}>

@@ -38,7 +38,7 @@ export default function Match (props) {
             src={prevImageUser}
             alt="name"
           />
-            <button className="button_match">ça t'excite ???</button>
+            <button className="btnStartFight" >ça t'excite ???</button>
           <img
             className="Match_img_candidat"
             src={prevImageIa}

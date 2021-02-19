@@ -8,10 +8,11 @@ import './Game.css'
 export default function Game () {
   
         return (
-            <div className="BodyJeu">
-                <Jeucopy />
-                
-            </div>
+            <div className="containt-jeu">
+                <div className="BodyJeu">
+                    <Jeucopy/>
+                </div>
+             </div>
         )
     }
 
