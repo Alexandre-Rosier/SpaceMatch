@@ -43,10 +43,15 @@
     height: 350px;
   }
 
-  .btnStartFight {
+  .btnMsg {
+    text-transform: uppercase;
     box-shadow: 0 0px 80px 60px #63b1fa;
     color: rgb(148, 27, 132);
     background:rgb(96, 204, 247);
     font-size: 15px;
+    font-weight: 800;
+    border-color: transparent;
+    border-radius: 10px;
+    letter-spacing: 2px;
   }
   
