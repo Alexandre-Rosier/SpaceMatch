@@ -1,10 +1,16 @@
 import './App.css';
 import PresPage2 from './components/PresentationPage2';
+import NoMatch from './components/NoMatch';
+import Game from './screens/Game'
+
 
 function App() {
   return (
     <div className="App">
       <PresPage2/>
+      <Game />
+      <NoMatch />
+      
     </div>
   );
 }

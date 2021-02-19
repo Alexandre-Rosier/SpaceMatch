@@ -1,0 +1,79 @@
+.invisible {
+  display: none;
+} 
+
+.BigContainer-nomatch{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.noMatch_container{
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.noMatch_candidat_container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.img-weapon{
+  width: 100px;
+  height: 100px;
+}
+.noMatch_img_candidat{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.noMAtch_user_weapon, .noMAtch_ai_weapon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #002036;
+  margin: 20px 10px;
+  width: 310px;
+  height: 500px;
+  color: white;
+  padding: 0px 5px;
+}
+
+.btnStartFight{
+  padding: 8px 12px;
+  background-color: #00415C;
+  text-transform: uppercase;
+  color: #FF9A6E;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  border-color: transparent;
+  border-radius: 10px;
+}
+.spanCombatEnCour{
+  
+  font-size: 2rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  margin: 0px 2vw;
+}
+.BtnNewChance{
+  padding: 8px 12px;
+  background-color: #00415C;
+  text-transform: uppercase;
+  color: #FF9A6E;
+  font-size: .9rem;
+  letter-spacing: 2px;
+  font-weight: 800;
+  border-color: transparent;
+  border-radius: 10px;
+}
