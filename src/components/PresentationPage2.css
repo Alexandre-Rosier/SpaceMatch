@@ -1,13 +1,13 @@
-.invisible {
+/* .invisible {
     display: none ;
-}
+} */
 .text-p1 {
     height:30px;
     width:250px;
     color:rgb(224, 22, 240);
     position:absolute;
-    top: 139px;
-    left: 240px;
+    top: 70px;
+    left: 250px;
     font-weight: bolder;
     font-weight: bold;
     font-size: 22px;
@@ -17,15 +17,15 @@
 .bulle-pres1 {
     width: 315px;
     position:absolute;
-    top: 110px;
-    left: 200px;
+    top: 40px;
+    left: 210px;
 }
 .text-p2 {
     height:40px;
     width:250px;
     color:rgb(224, 22, 240);
     position:absolute;
-    top: 115px;
+    top: 45px;
     left: 403px;
     font-weight: bolder;
     font-weight: bold;
@@ -36,7 +36,7 @@
 .bulle-pres2 {
     width: 350px;
     position:absolute;
-    top: 95px;
+    top: 20px;
     left: 350px;
 }
 .text-p3 {
@@ -44,8 +44,8 @@
     width:250px;
     color:rgb(224, 22, 240);
     position:absolute;
-    top: 133px;
-    left: 100px;
+    top: 65px;
+    left: 80px;
     font-weight: bolder;
     font-weight: bold;
     font-size: 20px;
@@ -55,6 +55,6 @@
 .bulle-pres3 {
     width: 320px;
     position:absolute;
-    top: 110px;
-    left: 60px;
+    top: 40px;
+    left: 40px;
 }

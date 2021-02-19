@@ -1,4 +1,5 @@
 .Match_background {
+  border-radius:50px;
   background-image: url('./bg1.png');
   background-size: cover;
   background-position: center center;
