@@ -5,7 +5,7 @@
 }
 
 .accueil-background {
-    background-color: #FF6B82;
+    background-color: #e439b0;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -41,16 +41,6 @@
     flex-direction: column;
 }
 
-.coeur1 {
-    width: 70px;
-    height: 90px;
-}
-
-.flingue {
-    width: 80px;
-    height: 90px;  
-}
-
 .accueil-titre {
     display: flex;
     justify-content: space-around;
@@ -62,13 +52,21 @@
     align-items: center;
 }
 
-.start {
-    border-radius: 50px;
-    width: 80px;
-    background-color: #36C8D1;
-}
-
 audio {
    width: 250px;
    height: 30px;
+}
+
+.HomeBtnStart{
+    background-color: #00415C;
+    text-transform: uppercase;
+    padding: 6px 26px;
+    border-radius: 10px;
+    color:#e439b0;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+.HomeBtnStart:focus{
+    outline: none !important;
 }

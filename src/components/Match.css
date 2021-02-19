@@ -1,5 +1,7 @@
 .Match_background {
-  background-color: #FF6B82;
+  background-image: url('./bg1.png');
+  background-size: cover;
+  background-position: center center;
 }
 
 .Match_container {

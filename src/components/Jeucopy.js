@@ -20,7 +20,6 @@ export default function Jeucopy () {
         async function fetchData(){
         const req = await axios.get("https://miadil.github.io/starwars-api/api/all.json")
         const reqFuturama = await axios.get("http://futuramaapi.herokuapp.com/api/v2/characters")
-        console.log(reqFuturama.data)
         const random = Math.floor(Math.random() * 87)
         const random2 = Math.floor(Math.random() * 20)
         setStarName(req.data[random].name)
