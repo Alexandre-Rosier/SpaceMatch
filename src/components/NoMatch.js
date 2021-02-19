@@ -21,8 +21,9 @@ export default function NoMatch(props) {
   const [SuperFight, setSuperFight] = useState('Combat en cours ...');
   const [prevImageUser, setPrevImageUser] = useState('');
   const [prevImageIa, setPrevImageIa] = useState('');
-  const [ScoreScUser, setScoreScUser] = useState('')
-  const [ScoreScAi, setScoreScAi] = useState('')
+  const [ScoreScUser, setScoreScUser] = useState('');
+  const [ScoreScAi, setScoreScAi] = useState('');
+  const [popupVisible, setPopupVisible] = useState('invisible');
 
   //Choose play weapon
 
@@ -64,20 +65,34 @@ export default function NoMatch(props) {
     setTimeout(function () {
       if (scoreArmAi < UserArmsScore) {
         setSuperFight(' La win Jacquie && Michel ');
-        setRed('green')
+        setRed('green');
       } else if (scoreArmAi === UserArmsScore) {
         setSuperFight(' Egalite ');
       } else {
         setSuperFight("T'as perdu ");
-        setRed('red')
+        setRed('red');
       }
-      setScoreScUser(`Your score : ${UserArmsScore}`)
-      setScoreScAi(`Computer score : ${scoreArmAi}`)
+      setScoreScUser(`Your score : ${UserArmsScore}`);
+      setScoreScAi(`Computer score : ${scoreArmAi}`);
     }, 3000);
+  };
+
+  const couillesenski = () => {
+    setPopupVisible('');
   };
 
   return (
     <div className="BigContainer-nomatch">
+      <div className={`popup ${popupVisible}`}>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/hP08aSMWqD4"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
       <div className="noMatch_container">
         <div className="noMatch_candidat_container">
           <div className="noMAtch_user_weapon">
@@ -132,7 +147,10 @@ export default function NoMatch(props) {
             />
           </div>
         </div>
-        <button className={`BtnNewChance ${messageNewChance}`}>
+        <button
+          onClick={couillesenski}
+          className={`BtnNewChance ${messageNewChance}`}
+        >
           Peut être une solution pour pécho la prochaine fois
         </button>
         {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/hP08aSMWqD4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
