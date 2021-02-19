@@ -1,8 +1,20 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Match.css';
 
-export default class Match extends Component {
-  render() {
+export default function Match (props) {
+  const [prevImageUser, setPrevImageUser] = useState('');
+  const [prevImageIa, setPrevImageIa] = useState('');
+
+  useEffect(() => {
+    try {
+      const { imageUser, imageIa } = props.location.data;
+      setPrevImageUser(imageUser);
+      setPrevImageIa(imageIa);
+    } catch (error) {
+      alert(error);
+    }
+  }, []);
+
     return (
     <div className="Match_background">
       <div className="Match_container">
@@ -23,13 +35,13 @@ export default class Match extends Component {
         <div className="Match_candidat_container">
           <img
             className="Match_img_candidat"
-            src="https://images.unsplash.com/photo-1559717642-f78162471caf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
+            src={prevImageUser}
             alt="name"
           />
             <button className="button_match">ça t'excite ???</button>
           <img
             className="Match_img_candidat"
-            src="https://images.unsplash.com/photo-1546314029-ca8247095938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+            src={prevImageIa}
             alt="name"
           />
         </div>
@@ -41,5 +53,4 @@ export default class Match extends Component {
       </div>
     </div>
     );
-  }
 }

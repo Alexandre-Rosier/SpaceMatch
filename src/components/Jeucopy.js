@@ -14,7 +14,10 @@ export default function Jeucopy() {
   const [ImgRandomSd, setImgRandomSd] = useState('');
   const [StarNameSd, setStarNameSd] = useState('');
   const [Score, setScore] = useState('');
-  const [invisible, setInvisible] = useState('invisible');
+  const [invisible, setInvisible] = useState('');
+  const[invisibleMatch, setInvisibleMatch] = useState('invisible')
+  const[invisibleNoMatch, setInvisibleNoMatch] = useState('invisible')
+  
 
   useEffect(() => {
     async function fetchData() {
@@ -41,9 +44,12 @@ export default function Jeucopy() {
     const randomScore = Math.floor(Math.random() * 100);
     if (randomScore > 50) {
       setScore('Ca Match');
+      setInvisible('invisible')
+      setInvisibleMatch('')
     } else {
       setScore('No Match');
-      setInvisible('');
+      setInvisible('invisible');
+      setInvisibleNoMatch('')
     }
   };
 
@@ -63,12 +69,24 @@ export default function Jeucopy() {
           </div>
         </div>
 
-        <button type="button" id="buttonMatch" onClick={ButtonMatch}>
+        <Link
+          className={`buttonNoMatch ${invisibleMatch} `}
+          to={{
+            pathname: '/match',
+            data: {
+              imageUser: ImgRandom,
+              imageIa: ImgRandomSd,
+            },
+          }}
+        >
+           Etes vous faits l'un pour l'autre ?<span id="hart">🌈💖🔥</span>
+        </Link>
+        <button type="button" id="buttonMatch" className={invisible} onClick={ButtonMatch}>
           Etes vous faits l'un pour l'autre ?<span id="hart">🌈💖🔥</span>
         </button>
 
         <Link
-          className={`buttonNoMatch ${invisible}`}
+          className={`buttonNoMatch ${invisibleNoMatch}`}
           to={{
             pathname: '/nomatch',
             data: {
