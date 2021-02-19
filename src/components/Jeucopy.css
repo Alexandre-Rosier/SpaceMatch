@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
+button:focus{
+    outline:none;
+}
+.invisible{
+    display:none;
+}
 .Jeu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: blueviolet;
     border: 15px solid rgb(199, 78, 189);
     border-radius: 10px;
-    height: 500px;
-    width: 500px;
-    padding: 0px;
+    padding:10px 12px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .TitreJeu { 
@@ -23,8 +31,8 @@
 
 #tableauJeu {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items:center;
     margin: 0px;
     padding: 0px;
 }
@@ -41,7 +49,7 @@
 #icon18 {
     margin: 0px;
     padding: 0px;
-    font-size: 100px;
+    font-size: 2rem;
     animation: Test 0.04s infinite;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #e60000, 0 0 20px #e600d3, 0 0 25px #e60000, 0 0 30px #de00e6, 0 0 35px #de00e6;
 }
@@ -71,6 +79,7 @@
     color: pink;
     font-size: 20px ;
     width: 250px;
+    border-color: white;
 }
 
 
@@ -85,4 +94,24 @@
 
 #hart {
     font-size: 30px;
+}
+
+
+.buttonNoMatch {
+    margin-top:40px;
+    padding: 5px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    font-size: 40px ;
+    width: 250px;
+}
+
+.buttonNoMatch:hover {
+    padding: 5px;
+    background-color: rgb(185, 10, 10);
+    border-radius: 10px;
+    color: black;
+    font-size: 40px ;
+    width: 250px;
 }

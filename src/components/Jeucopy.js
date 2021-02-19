@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 // import { Link } from "react-router-dom";
 import axios from 'axios'
-
+import ButtonMatch from './BoutonMatch'
 import Card from './Card'
 import './Jeucopy.css'
 import './BoutonMatch.css'
@@ -12,6 +12,8 @@ export default function Jeucopy () {
     const[StarName, setStarName] = useState('')
     const [ImgRandomSd, setImgRandomSd] = useState ('')
     const[StarNameSd, setStarNameSd] = useState('')
+    const[Score, setScore] = useState('')
+    const [invisible, setInvisible] = useState('invisible')
 
     useEffect(() => {
         async function fetchData(){
@@ -28,26 +30,42 @@ export default function Jeucopy () {
         fetchData()
     },[])
 
-    
+    const ButtonMatch = (e) => {
+        e.preventDefault()
+        console.log('ok')
+        const randomScore = Math.floor(Math.random() * 100) 
+        if (randomScore > 50) {
+            setScore("Ca Match")
+            
+        }else{
+            setScore('No Match')
+            setInvisible('')
+        }
+    }
+
+
         return (
             <div className="Jeu">
-                 <h1 className="TitreJeu">La roue de l'amour �  ?</h1>
+                 <h1 className="TitreJeu">La roue de l'amour � </h1>
 
                 <div id="tableauJeu">
                     <div className="Card">
                         <Card image={ImgRandom}/>
                     </div> 
-                    <p id="icon18">🔞</p>  
+                    <p id="icon18">{Score}</p>  
                     <div className="Card">
                         <Card image={ImgRandomSd}/>
                     </div>       
                 </div> 
-                {/* pb pour lier action au boutton */}
-                <button type="button" id="buttonMatch" >
+                
+                <button type="button" id="buttonMatch" onClick={ButtonMatch}>
                     Etes vous faits l'un pour l'autre ? 
                      <span id="hart">🌈💖🔥</span>
                 </button>
 
+                <button className={`buttonNoMatch ${invisible}`}>
+                    It's a FIGHT ! <span id="hart">🔪💣🍆</span>
+                </button>
                 {/* <Link
                     to={{
                      pathname: "/Caro_Kev",
