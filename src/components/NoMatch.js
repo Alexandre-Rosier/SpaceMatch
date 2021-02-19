@@ -96,7 +96,7 @@ export default function NoMatch(props) {
       <div className="noMatch_container">
         <div className="noMatch_candidat_container">
           <div className="noMAtch_user_weapon">
-            <p> {UserMessage} </p>
+            <p className="Amessage"> {UserMessage} </p>
             <select className={stop} onChange={handleChange}>
               {arms.map((arm) => (
                 <option
@@ -133,7 +133,7 @@ export default function NoMatch(props) {
             {SuperFight}
           </span>
           <div className="noMAtch_ai_weapon">
-            <p>{AiMessage}</p>
+            <p className="Amessage">{AiMessage}</p>
             <img
               className={`img-weapon ${imgVisibleAi}`}
               alt="img"
