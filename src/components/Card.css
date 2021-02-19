@@ -6,7 +6,7 @@
     width: 100px;
     border: pink solid 3px;
     border-radius: 5px;
-    object-fit: cover ;
+    object-fit: contain ;
 }
 
 .NamePers {
