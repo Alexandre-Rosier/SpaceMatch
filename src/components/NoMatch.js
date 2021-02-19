@@ -17,7 +17,7 @@ export default function NoMatch(props) {
   const [imgVisibleAi, setImgVisibleAi] = useState('invisible');
   const [messageCombat, setMessageCombat] = useState('invisible');
   const [messageNewChance, setMessageNewChance] = useState('invisible');
-  const [red, setRed] = useState('red');
+  const [red, setRed] = useState('white');
   const [SuperFight, setSuperFight] = useState('Combat en cours ...');
   const [prevImageUser, setPrevImageUser] = useState('');
   const [prevImageIa, setPrevImageIa] = useState('');
@@ -64,10 +64,12 @@ export default function NoMatch(props) {
     setTimeout(function () {
       if (scoreArmAi < UserArmsScore) {
         setSuperFight(' La win Jacquie && Michel ');
+        setRed('green')
       } else if (scoreArmAi === UserArmsScore) {
         setSuperFight(' Egalite ');
       } else {
         setSuperFight("T'as perdu ");
+        setRed('red')
       }
       setScoreScUser(`Your score : ${UserArmsScore}`)
       setScoreScAi(`Computer score : ${scoreArmAi}`)
