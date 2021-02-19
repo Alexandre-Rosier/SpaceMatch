@@ -27,7 +27,7 @@ button:focus{
 
 .TitreJeu { 
     font-family: 'Orbitron', sans-serif;
-    color: white;
+    color: rgb(231, 128, 223);
     font-size: 50px;
     letter-spacing: 5px;
     padding: 0px;

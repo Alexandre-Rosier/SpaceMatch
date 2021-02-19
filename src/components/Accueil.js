@@ -3,7 +3,7 @@ import './Accueil.css';
 import {Link} from "react-router-dom";
 
 function Accueil () {
-    const [start, setStart]= useState("Go")
+    const [start, setStart]= useState("")
     const handleClick = () => {
         setStart("c'est parti")
     }
@@ -14,7 +14,6 @@ function Accueil () {
 
         return (
             <div className="first-background">
-                <audio src="musique/les-inconnus-ingrid-est-ce-que-tu-baises.mp3" controls></audio>
                 <div className="accueil-background">
                     <div className="accueil-titre">
                       
@@ -24,7 +23,7 @@ function Accueil () {
                     <div className="accueil-btn">
                     <form onSubmit={submit}>
                         <Link to="/game">
-                            <input onClick = {handleClick} type="submit" value="GO" className="start" />
+                            <input onClick = {handleClick} type="submit" value="GO" className="HomeBtnStart" />
                         </Link>
                         <div className="message-start">
                             {start}

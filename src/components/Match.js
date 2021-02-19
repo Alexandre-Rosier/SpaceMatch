@@ -21,14 +21,9 @@ export default function Match (props) {
 
       <div className="Match_coeurs_container">
           <img
-            className="Match_img_coeurs"
-            src="images/matchCoeur1.png"
-            alt="coeur"
-          />
-          <img
-            className="Match_img_coeurs"
-            src="images/matchCoeur2.png"
-            alt="coeur"
+            className="Match_img_loveroom"
+            src="imageAlex/loveroom.png"
+            alt="loveroom"
           />
       </div>
 
@@ -38,7 +33,7 @@ export default function Match (props) {
             src={prevImageUser}
             alt="name"
           />
-            <button className="btnStartFight" >ça t'excite ???</button>
+            <button className="btnMsg">Est-ce que tu veux pusher avec moi ???</button>
           <img
             className="Match_img_candidat"
             src={prevImageIa}

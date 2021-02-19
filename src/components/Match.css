@@ -13,16 +13,17 @@
   }
   
 .Match_candidat_container {
-    padding-top: 100px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 10% 0;
+    margin:0;
   }
   
   .Match_img_candidat {
-    
-    height: 300px;
+    margin: 0 30px 0 30px;
+    border-radius:150px;
+    height: 250px;
     width: 250px;
   }
   
@@ -34,21 +35,24 @@
       background-color: #36C8D1; ;
       
   }
-
-  .Match_coeurs_container {
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 10% 0;
-    
+  .Match_img_loveroom { 
+    box-shadow: 0 0px 80px 60px #e439b0;
+    border-radius:30px;
+    margin-top:50px;
+    width: 380px;
+    height: 350px;
   }
 
-  .Match_img_coeurs {
-    
-    height: 180px;
-    width: 180px;
+  .btnMsg {
+    height: 80px;
+    text-transform: uppercase;
+    box-shadow: 0 0px 80px 60px #63b1fa;
+    color: rgb(148, 27, 132);
+    background:rgb(96, 204, 247);
+    font-size: 18px;
+    font-weight: 800;
+    border-color: transparent;
+    border-radius: 10px;
+    letter-spacing: 2px;
   }
-
-  
   
