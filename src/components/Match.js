@@ -26,7 +26,7 @@ export default class Match extends Component {
             src="https://images.unsplash.com/photo-1559717642-f78162471caf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80"
             alt="name"
           />
-            <button className="button_match">Prove your love</button>
+            <button className="button_match">ça t'excite ???</button>
           <img
             className="Match_img_candidat"
             src="https://images.unsplash.com/photo-1546314029-ca8247095938?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
